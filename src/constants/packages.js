@@ -6,7 +6,7 @@ const Packages = async () => {
     // const body = response.json();
     // return body;
     return await axios
-      .get('/packages')
+      .get('http://localhost:3131/packages')
       .then((res) => res.data)
       .then((data) => data.filter((value) => Object.keys(value).length !== 0));
   } catch (err) {
