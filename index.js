@@ -3,6 +3,7 @@ const app = express();
 const cors = require('cors');
 const fs = require('fs');
 const platform = process.platform;
+const path = require('path');
 
 const filePath =
   platform === 'linux' ? '/var/lib/dpkg/status' : './status.real';
@@ -62,8 +63,17 @@ app.get('/', (req, res) => {
   });
 });
 
-app.listen(3131, () => {
-  console.log(`Listening at 3131`);
+if (process.env.NODE === 'production') {
+  app.use(express.static('client/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
+
+const PORT = process.env.PORT || 3131;
+app.listen(PORT, () => {
+  console.log(`Listening at ${PORT}`);
 });
 
 // :/mnt/c/Users/michaelcastro/OneDrive/Desktop/reaktor/reaktor

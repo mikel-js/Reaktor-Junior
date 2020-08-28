@@ -1,6 +1,6 @@
 const Packages = async () => {
   try {
-    const response = await fetch('http://localhost:3131/');
+    const response = await fetch(`http://localhost:3131/`);
     const body = response.json();
     return body;
   } catch (err) {
