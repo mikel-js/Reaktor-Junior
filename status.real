@@ -1,0 +1,1771 @@
+Package: libws-commons-util-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 101
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.0.1-7
+Description: Common utilities from the Apache Web Services Project
+ This is a small collection of utility classes, that allow high
+ performance XML processing based on SAX.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://ws.apache.org/commons/util/
+
+Package: python-pkg-resources
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 175
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: distribute
+Version: 0.6.24-1ubuntu1
+Replaces: python2.3-setuptools, python2.4-setuptools
+Provides: python2.6-setuptools, python2.7-setuptools
+Depends: python (>= 2.6), python (<< 2.8)
+Suggests: python-distribute, python-distribute-doc
+Conflicts: python-setuptools (<< 0.6c8-3), python2.3-setuptools (<< 0.6b2), python2.4-setuptools (<< 0.6b2)
+Description: Package Discovery and Resource Access using pkg_resources
+ The pkg_resources module provides an API for Python libraries to
+ access their resource files, and for extensible applications and
+ frameworks to automatically discover plugins.  It also provides
+ runtime support for using C extensions that are inside zipfile-format
+ eggs, support for merging packages that have separately-distributed
+ modules or subpackages, and APIs for managing Python's current
+ "working set" of active packages.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Homepage: http://packages.python.org/distribute
+Python-Version: 2.6, 2.7
+
+Package: tcpd
+Status: install ok installed
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Installed-Size: 132
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: tcp-wrappers
+Version: 7.6.q-21
+Replaces: libwrap0 (<< 7.6-8)
+Depends: libc6 (>= 2.4), libwrap0 (>= 7.6-4~)
+Description: Wietse Venema's TCP wrapper utilities
+ Wietse Venema's network logger, also known as TCPD or LOG_TCP.
+ .
+ These programs log the client host name of incoming telnet,
+ ftp, rsh, rlogin, finger etc. requests.
+ .
+ Security options are:
+  - access control per host, domain and/or service;
+  - detection of host name spoofing or host address spoofing;
+  - booby traps to implement an early-warning system.
+Original-Maintainer: Marco d'Itri <md@linux.it>
+
+Package: libbsf-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 130
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1:2.4.0-5
+Depends: libapache-pom-java
+Suggests: bsh, libxalan2-java, rhino
+Description: Bean Scripting Framework to support scripting languages in Java
+ Bean Scripting Framework (BSF) is a set of Java classes which provides
+ scripting language support within Java applications, and access to Java
+ objects and methods from scripting languages. BSF allows one to write JSPs in
+ languages other than Java while providing access to the Java class library. In
+ addition, BSF permits any Java application to be implemented in part (or
+ dynamically extended) by a language that is embedded within it. This is
+ achieved by providing an API that permits calling scripting language engines
+ from within Java, as well as an object registry that exposes Java objects to
+ these scripting language engines.
+ .
+ BSF supports these scripting languages:
+  * Python (using Jython)
+  * JavaScript (using rhino)
+  * XSLT Stylesheets (as a component of Apache XML project's Xalan and Xerces)
+  * BeanShell (using bsh) via its own bsf adapter
+ .
+ Support for Tcl, NetRexx is not available in this Debian
+ package since Jacl, NetRexx (non-free) are not packaged.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://jakarta.apache.org/bsf/
+
+Package: libaspectj-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 11710
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: aspectj
+Version: 1.6.12+dfsg-3
+Replaces: aspectj (<< 1.6.10+dfsg-1)
+Suggests: aspectj
+Conflicts: aspectj (<< 1.6.10+dfsg-1)
+Description: aspect-oriented extension for Java - library
+ AspectJ enables the clean modularization of crosscutting concerns
+ such as: error checking and handling, synchronization, context-sensitive
+ behavior, performance optimizations, monitoring and logging, debugging
+ support, multi-object protocols.
+ .
+ This package provides the JAR libraries of aspectj.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://www.eclipse.org/aspectj
+
+Package: libslf4j-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 315
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.6.4-1
+Suggests: libcommons-logging-java, liblog4j1.2-java
+Description: Simple Logging Facade for Java
+ The Simple Logging Facade for Java (or SLF4J) is intended to serve as
+ a simple facade for various logging APIs allowing to the end-user to
+ plug in the desired implementation at deployment time. SLF4J also
+ allows for a gradual migration path away from Apache Commons
+ Logging (CL)
+ .
+ Logging API implementations can either choose to implement the SLF4J
+ interfaces directly, e.g. logback or SimpleLogger. Alternatively, it
+ is possible (and rather easy) to write SLF4J adapters for the given
+ API implementation, e.g. Log4jLoggerAdapter or JDK14LoggerAdapter.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://www.slf4j.org/
+
+Package: libplexus-sec-dispatcher-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 89
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: plexus-sec-dispatcher
+Version: 1.3.1-5
+Depends: junit (>= 3.8.2), libplexus-cipher-java, libplexus-container-default-java, libplexus-utils-java
+Suggests: libplexus-sec-dispatcher-java-doc
+Description: Plexus Security Dispatcher Component used by Maven
+ The Plexus project provides a full software stack for creating and
+ executing software projects. Based on the Plexus container, the applications
+ can utilise component-oriented programming to build modular, reusable
+ components that can easily be assembled and reused.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: https://github.com/sonatype/plexus-sec-dispatcher
+
+Package: libtext-wrapi18n-perl
+Status: install ok installed
+Priority: required
+Section: perl
+Installed-Size: 68
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.06-7
+Depends: libtext-charwidth-perl
+Description: internationalized substitute of Text::Wrap
+ This module is a substitution for Text::Wrap, supporting
+ multibyte characters such as UTF-8, EUC-JP, and GB2312, fullwidth
+ characters such as east Asian characters, combining characters
+ such as diacritical marks and Thai, and languages which don't
+ use whitespaces between words such as Chinese and Japanese.
+ .
+ It provides wrap().
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Homepage: http://search.cpan.org/search?module=Text::WrapI18N
+
+Package: java-common
+Status: install ok installed
+Multi-Arch: foreign
+Priority: optional
+Section: java
+Installed-Size: 242
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.43ubuntu2
+Suggests: default-jre, equivs
+Description: Base of all Java packages
+ This package must be installed in the system if a Java environment
+ is desired. It covers useful information for Java users in
+ Debian GNU/Linux, including:
+  * The Java policy document which describes the layout of Java support in
+    Debian and how Java packages should behave.
+  * The Debian-Java-FAQ which provides information on the status of
+    Java support in Debian, available compilers, virtual machines, Java
+    programs and libraries as well as on legal issues.
+  * Information on how to create dummy packages to fulfill java2
+    requirements.
+Original-Maintainer: Debian Java Mailing List <debian-java@lists.debian.org>
+
+Package: libantlr-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 493
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: antlr
+Version: 2.7.7+dfsg-3
+Replaces: antlr (<< 2.7.7-8)
+Breaks: antlr (<< 2.7.7-8)
+Description: language tool for constructing recognizers, compilers etc (java library)
+ ANTLR, ANother Tool for Language Recognition, (formerly PCCTS) is
+ a language tool that provides a framework for constructing recognizers,
+ compilers, and translators from grammatical descriptions containing C++
+ or Java actions [You can use PCCTS 1.xx to generate C-based parsers].
+ .
+ This package contains the java libraries without a dependency on any runtime
+ to be able to bootstrap gcj without a dependency on a java runtime.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://www.antlr2.org/
+
+Package: libhttp-date-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 6.00-1
+Replaces: libwww-perl (<< 6.00)
+Depends: perl, libtimedate-perl
+Breaks: libwww-perl (<< 6.00)
+Description: module of date conversion routines
+ HTTP::Date provides functions that deal the date formats used by the HTTP
+ protocol (and then some more). Only the first two functions, time2str() and
+ str2time(), are exported by default.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/HTTP-Date/
+
+Package: libio-stringy-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 273
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: io-stringy
+Version: 2.110-5
+Depends: perl
+Description: Perl modules for IO from scalars and arrays
+ The libio-stringy-perl package (which corresponds to the CPAN package
+ IO-stringy) provides the following Perl modules:
+   IO::AtomicFile    Write a file which is updated atomically
+   IO::Lines         I/O handle to read/write to array of lines
+   IO::Scalar        I/O handle to read/write to a string
+   IO::ScalarArray   I/O handle to read/write to array of scalars
+   IO::Wrap          Wrap old-style FHs in standard OO interface
+   IO::WrapTie       Tie your handles & retain full OO interface
+Original-Maintainer: Bart Martens <bartm@debian.org>
+Homepage: http://search.cpan.org/dist/IO-stringy/
+
+Package: debconf
+Status: install ok installed
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 609
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: all
+Version: 1.5.42ubuntu1
+Replaces: debconf-tiny
+Provides: debconf-2.0
+Pre-Depends: perl-base (>= 5.6.1-4)
+Recommends: apt-utils (>= 0.5.1), debconf-i18n
+Suggests: debconf-doc, debconf-utils, whiptail | dialog | gnome-utils, libterm-readline-gnu-perl, libgtk2-perl (>= 1:1.130), libnet-ldap-perl, perl, libqtgui4-perl, libqtcore4-perl
+Conflicts: apt (<< 0.3.12.1), cdebconf (<< 0.96), debconf-tiny, debconf-utils (<< 1.3.22), dialog (<< 0.9b-20020814-1), menu (<= 2.1.3-1), whiptail (<< 0.51.4-11), whiptail-utf8 (<= 0.50.17-13)
+Conffiles:
+ /etc/apt/apt.conf.d/70debconf 7e9d09d5801a42b4926b736b8eeabb73
+ /etc/bash_completion.d/debconf 8fa1862734fbe54d7178aaaa419f5a11
+ /etc/debconf.conf 8c0619be413824f1fc7698cee0f23811
+Description: Debian configuration management system
+ Debconf is a configuration management system for debian packages. Packages
+ use Debconf to ask questions when they are installed.
+Original-Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+
+Package: libhttpcore-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 454
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: httpcomponents-core
+Version: 4.1.4-1
+Provides: libhttpcore-nio-java
+Description: set of low level HTTP transport components for Java
+ HttpCore is a set of low level HTTP transport components that can be used
+ to build custom client and server side HTTP services with a minimal
+ footprint. HttpCore supports two I/O models:
+ .
+  - blocking I/O model, based on the classic Java I/O;
+  - non-blocking, event driven I/O model based on Java NIO.
+ .
+ The blocking I/O model may be more appropriate for data intensive, low
+ latency scenarios, whereas the non-blocking model may be more appropriate
+ for high latency scenarios where raw data throughput is less important
+ than the ability to handle thousands of simultaneous HTTP connections in
+ a resource efficient manner.
+Original-Maintainer: David Paleino <dapal@debian.org>
+Homepage: http://hc.apache.org/httpcomponents-core/index.html
+
+Package: liblog4j1.2-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 465
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: apache-log4j1.2
+Version: 1.2.16-3ubuntu1
+Suggests: liblog4j1.2-java-doc, libgnumail-java, libmx4j-java
+Description: Logging library for java
+ log4j is a tool to help the programmer output log statements to a variety of
+ output targets.
+ .
+ It is possible to enable logging at runtime without modifying the application
+ binary. The log4j package is designed so that log statements can remain in
+ shipped code without incurring a high performance cost.
+ .
+ One of the distinctive features of log4j is the notion of hierarchical
+ loggers. Using loggers it is possible to selectively control which log
+ statements are output at arbitrary granularity.
+ .
+ Log4j can output to: a file, a rolling file, a database with a JDBC driver,
+ many output  asynchronously, a JMS Topic, a swing based logging console,
+ the NT event log, /dev/null, a SMTP server (using javamail), a socket server,
+ syslog, telnet daemon and stdout.
+ .
+ The format of the output can be defined using one of the various layout
+ (or user defined layout) like: simple text, html, date, pattern defined and
+ XML.
+Homepage: http://logging.apache.org/log4j/1.2/
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+
+Package: libjaxp1.3-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 661
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.3.05-2ubuntu2
+Suggests: libjaxp1.3-java-gcj
+Conflicts: libxalan2-java (<= 2.7.1-3)
+Description: Java XML parser and transformer APIs (DOM, SAX, JAXP, TrAX)
+ xml-apis.jar from the Apache XML Commons project is used by the Xerces-J XML
+ parser and Xalan-J XSLT processor and specifies these APIs:
+  * Document Object Model (DOM) level 3
+  * Simple API for XML (SAX) 2.0.2
+  * Java APIs for XML Processing (JAXP) 1.3.04
+  * Transformation API for XML (TrAX) 1.3.04
+  * Document Object Model (DOM) Level 3 Load and Save
+  * JSR 206 Java API for XML Processing 1.3
+ .
+ These classes are also used in Sun's reference implementation. A GPL'ed
+ implementation of these APIs can be found in the libgnujaxp-java package.
+Homepage: http://java.sun.com/xml/jaxp/index.jsp
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+
+Package: libitext1-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 1315
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.4-5
+Description: Java Library to generate PDF on the Fly
+ iText is a library that allows you to generate PDF files on the fly.
+ The iText classes are very useful for people who need to generate read-only,
+ platform independent documents containing text, lists, tables and images.
+ The library is especially useful in combination with Java(TM)
+ technology-based Servlets: The look and feel of HTML is browser dependent;
+ with iText and PDF you can control exactly how your servlet's output will look.
+ iText requires JDK 1.2. It's available for free under a multiple license:
+ MPL and LGPL.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://www.lowagie.com/iText/
+
+Package: libelf1
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 164
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: elfutils
+Version: 0.152-1ubuntu3
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Description: library to read and write ELF files
+ The libelf1 package provides a shared library which allows reading and
+ writing ELF files on a high level.  Third party programs depend on
+ this package to read internals of ELF files.  The programs of the
+ elfutils package use it also to generate new ELF files.
+ .
+ This library is part of elfutils.
+Homepage: https://fedorahosted.org/elfutils/
+Original-Maintainer: Kurt Roeckx <kurt@roeckx.be>
+
+Package: memtest86+
+Status: install ok installed
+Priority: optional
+Section: misc
+Installed-Size: 2404
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 4.20-1.1ubuntu1
+Depends: debconf (>= 0.5) | debconf-2.0
+Suggests: hwtools, memtester, kernel-patch-badram, memtest86, grub-pc | grub-legacy, mtools
+Conffiles:
+ /etc/grub.d/20_memtest86+ 6dc48efccb95680ab07349956a48fef3
+Description: thorough real-mode memory tester
+ Memtest86+ scans your RAM for errors.
+ .
+ This tester runs independently of any OS - it is run at computer
+ boot-up, so that it can test *all* of your memory.  You may want to
+ look at `memtester', which allows to test your memory within Linux,
+ but this one won't be able to test your whole RAM.
+ .
+ It can output a list of bad RAM regions usable by the BadRAM kernel
+ patch, so that you can still use your old RAM with one or two bad bits.
+ .
+ Memtest86+ is based on memtest86 3.0, and adds support for recent
+ hardware, as well as a number of general-purpose improvements,
+ including many patches to memtest86 available from various sources.
+ .
+ Both memtest86 and memtest86+ are being worked on in parallel.
+Homepage: http://www.memtest.org/
+Original-Maintainer: Yann Dirson <dirson@debian.org>
+
+Package: dash
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: shells
+Installed-Size: 215
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.5.7-2ubuntu2
+Depends: debianutils (>= 2.15), dpkg (>= 1.15.0)
+Pre-Depends: libc6 (>= 2.14)
+Description: POSIX-compliant shell
+ The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
+ from ash.
+ .
+ Since it executes scripts faster than bash, and has fewer library
+ dependencies (making it more robust against software or hardware
+ failures), it is used as the default system shell on Debian systems.
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Original-Maintainer: Gerrit Pape <pape@smarden.org>
+
+Package: libsocket6-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 94
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.23-1build2
+Depends: perl (>= 5.14.2-3build1), perlapi-5.14.2, libc6 (>= 2.4), perl-base (>= 5.8.0-10)
+Description: Perl extensions for IPv6
+ This module supports getaddrinfo() and getnameinfo() to intend to enable
+ protocol independent programming. If your environment supports IPv6,
+ IPv6 related defines such as AF_INET6 are included.
+Original-Maintainer: Masahito Omote <omote@debian.org>
+
+Package: libpolkit-gobject-1-0
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 151
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: policykit-1
+Version: 0.104-1ubuntu1
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.31.8)
+Pre-Depends: multiarch-support
+Breaks: libpolkit-agent-1-0 (<< 0.99), libpolkit-backend-1-0 (<< 0.99), libpolkit-gtk-1-0 (<< 0.99), policykit-1 (<< 0.99)
+Description: PolicyKit Authorization API
+ PolicyKit is a toolkit for defining and handling the policy that
+ allows unprivileged processes to speak to privileged processes.
+ .
+ This package contains a library for accessing PolicyKit.
+Homepage: http://hal.freedesktop.org/docs/PolicyKit/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: shared-mime-info
+Status: install ok installed
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Installed-Size: 2504
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.0-0ubuntu4.1
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.24.0), libxml2 (>= 2.7.4)
+Conflicts: libglib2.0-0 (<< 2.17.2), libgnomevfs2-0 (<< 1:2.24.0), tracker (<< 0.6.90)
+Description: FreeDesktop.org shared MIME database and spec
+ This is the shared MIME-info database from the X Desktop Group. It is required
+ by any program complying to the Shared MIME-Info Database spec, which is also
+ included in this package.
+ .
+ At this time at least ROX, GNOME, KDE and XFCE use this database.
+Homepage: http://freedesktop.org/wiki/Software/shared-mime-info
+Original-Maintainer: Sebastian Dröge <slomo@debian.org>
+
+Package: libjaxen-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 288
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.1.3-1
+Replaces: libsaxpath-java
+Depends: libxerces2-java
+Recommends: libdom4j-java, libjdom1-java, libxom-java
+Conflicts: libsaxpath-java
+Description: Java XPath engine
+ jaxen is a universal object model walker, capable of evaluating XPath
+ expressions across multiple models. Currently supported are dom4j,
+ JDOM, DOM and XOM.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://jaxen.org
+
+Package: libxdmcp6
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 67
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libxdmcp
+Version: 1:1.1.0-4
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: X11 Display Manager Control Protocol library
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: bsh-gcj
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1682
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: bsh
+Version: 2.0b4-12build1
+Depends: bsh (= 2.0b4-12build1), libgcj-common (>> 1:4.1.1-13), libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libgcj-bc (>= 4.4.5-1~)
+Description: Java scripting environment (BeanShell) Version 2 (native code)
+ BeanShell is a small, free, embeddable, Java source interpreter with object
+ scripting language features, written in Java. BeanShell executes standard Java
+ statements and expressions, in addition to obvious scripting commands and
+ syntax.  BeanShell supports scripted objects as simple method closures like
+ those in Perl and JavaScript(tm).
+ .
+ You can use BeanShell interactively for Java experimentation and debugging or
+ as a simple scripting engine for you applications.  In short: BeanShell is a
+ dynamically interpreted Java, plus some useful stuff.
+ .
+ This package contains the natively compiled code for use by gij.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://www.beanshell.org/
+
+Package: libnl-3-200
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 146
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libnl3
+Version: 3.2.3-2ubuntu2
+Depends: libc6 (>= 2.14)
+Conffiles:
+ /etc/libnl-3/pktloc 02e59c3b2bba388ba64b2d120a76bab7
+ /etc/libnl-3/classid 3e07259e58674631830b152e983ca995
+Description: library for dealing with netlink sockets
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+Homepage: http://people.suug.ch/~tgr/libnl/
+Original-Maintainer: Heiko Stuebner <mmind@debian.org>
+
+Package: coreutils
+Essential: yes
+Status: install ok installed
+Multi-Arch: foreign
+Priority: required
+Section: utils
+Installed-Size: 5496
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 8.13-3ubuntu3.2
+Replaces: mktemp, timeout
+Depends: dpkg (>= 1.15.4) | install-info
+Pre-Depends: libacl1 (>= 2.2.51-5), libattr1 (>= 1:2.4.46-5), libc6 (>= 2.15), libselinux1 (>= 1.32)
+Conflicts: timeout
+Description: GNU core utilities
+ This package contains the basic file, shell and text manipulation
+ utilities which are expected to exist on every operating system.
+ .
+ Specifically, this package includes:
+ arch base64 basename cat chcon chgrp chmod chown chroot cksum comm cp
+ csplit cut date dd df dir dircolors dirname du echo env expand expr
+ factor false flock fmt fold groups head hostid id install join link ln
+ logname ls md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc od
+ paste pathchk pinky pr printenv printf ptx pwd readlink rm rmdir runcon
+ sha*sum seq shred sleep sort split stat stty sum sync tac tail tee test
+ timeout touch tr true truncate tsort tty uname unexpand uniq unlink
+ users vdir wc who whoami yes
+Homepage: http://gnu.org/software/coreutils
+Original-Maintainer: Michael Stone <mstone@debian.org>
+
+Package: cloudstack-common
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 30980
+Maintainer: Wido den Hollander <wido@widodh.nl>
+Architecture: all
+Source: cloudstack
+Version: 4.1.0-incubating-0.0.snapshot
+Depends: bash, genisoimage
+Conflicts: cloud-console-proxy, cloud-daemonize, cloud-deps, cloud-python, cloud-scripts, cloud-setup, cloud-system-iso, cloud-utils
+Description: A common package which contains files which are shared by several CloudStack packages
+Homepage: http://www.cloudstack.org/
+
+Package: sudo
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 996
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.8.3p1-1ubuntu3.3
+Replaces: sudo-ldap
+Depends: libc6 (>= 2.15), libpam0g (>= 0.99.7.1), libpam-modules
+Conflicts: sudo-ldap
+Conffiles:
+ /etc/sudoers.d/README 0b76d590c3d5d1966bdfa7ee808893c4
+ /etc/pam.d/sudo 665a6dead44ff792cfad6b0faa10a621
+ /etc/sudoers 1b00ee0a97a1bcf9961e476140e2c5c1
+ /etc/init.d/sudo 8dd3c1c4fb7582466676fd00d31cdc9b
+Description: Provide limited super user privileges to specific users
+ Sudo is a program designed to allow a sysadmin to give limited root
+ privileges to users and log root activity.  The basic philosophy is to give
+ as few privileges as possible but still allow people to get their work done.
+ .
+ This version is built with minimal shared library dependencies, use the
+ sudo-ldap package instead if you need LDAP support for sudoers.
+Original-Maintainer: Bdale Garbee <bdale@gag.com>
+
+Package: libfreetype6
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 811
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: freetype
+Version: 2.4.8-1ubuntu2.1
+Depends: libc6 (>= 2.14), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Description: FreeType 2 font engine, shared library files
+ The FreeType project is a team of volunteers who develop free,
+ portable and high-quality software solutions for digital typography.
+ They specifically target embedded systems and focus on bringing small,
+ efficient and ubiquitous products.
+ .
+ The FreeType 2 library is their new software font engine.  It has been
+ designed to provide the following important features:
+  * A universal and simple API to manage font files
+  * Support for several font formats through loadable modules
+  * High-quality anti-aliasing
+  * High portability & performance
+ .
+ Supported font formats include:
+  * TrueType files (.ttf) and collections (.ttc)
+  * Type 1 font files both in ASCII (.pfa) or binary (.pfb) format
+  * Type 1 Multiple Master fonts.  The FreeType 2 API also provides
+    routines to manage design instances easily
+  * Type 1 CID-keyed fonts
+  * OpenType/CFF (.otf) fonts
+  * CFF/Type 2 fonts
+  * Adobe CEF fonts (.cef), used to embed fonts in SVG documents with
+    the Adobe SVG viewer plugin.
+  * Windows FNT/FON bitmap fonts
+ .
+ This package contains the files needed to run programs that use the
+ FreeType 2 library.
+ .
+  Home Page: http://www.freetype.org/
+  Authors: David Turner   <david.turner@freetype.org>
+           Robert Wilhelm <robert.wilhelm@freetype.org>
+           Werner Lemberg <werner.lemberg@freetype.org>
+Homepage: http://www.freetype.org
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+
+Package: debianutils
+Essential: yes
+Status: install ok installed
+Multi-Arch: foreign
+Priority: required
+Section: utils
+Installed-Size: 218
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 4.2.1ubuntu2
+Depends: sensible-utils
+Pre-Depends: libc6 (>= 2.15)
+Description: Miscellaneous utilities specific to Debian
+ This package provides a number of small utilities which are used
+ primarily by the installation scripts of Debian packages, although
+ you may use them directly.
+ .
+ The specific utilities included are: installkernel run-parts
+ savelog tempfile which.
+Original-Maintainer: Clint Adams <clint@debian.org>
+
+Package: libxcb-shm0
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 49
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libxcb
+Version: 1.8.1-1ubuntu0.1
+Depends: libc6 (>= 2.2.5), libxcb1
+Pre-Depends: multiarch-support
+Description: X C Binding, shm extension
+ This package contains the library files needed to run software using
+ libxcb-shm, the shm extension for the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+Homepage: http://xcb.freedesktop.org
+Original-Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+
+Package: libclass-accessor-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.34-1
+Depends: perl, libsub-name-perl
+Description: Perl module that automatically generates accessors
+ Class::Accessor automagically generates accessor/mutator methods for your
+ class. Most of the time, writing accessors is an exercise in cutting and
+ pasting. If you make your module a subclass of Class::Accessor and declare
+ your accessor fields with mk_accessors() then you will find yourself with a
+ set of automatically generated accessors which can even be customized.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/Class-Accessor/
+
+Package: libxmuu1
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 61
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libxmu
+Version: 2:1.1.0-3
+Depends: libc6 (>= 2.4), libx11-6
+Pre-Depends: multiarch-support
+Description: X11 miscellaneous micro-utility library
+ libXmuu provides a set of miscellaneous utility convenience functions for X
+ libraries to use.  It is a lighter version of libXmu that does not depend
+ on libXt or libXext; for more information on libXmu, see libxmu6.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXmu
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: python-twisted-bin
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 144
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: twisted
+Version: 11.1.0-1ubuntu2
+Replaces: python2.3-twisted-bin, python2.4-twisted-bin
+Provides: python2.7-twisted-bin
+Depends: python2.7, python (>= 2.7), python (<< 2.8), libc6 (>= 2.3.2)
+Suggests: python-twisted-bin-dbg
+Conflicts: python2.3-twisted-bin, python2.4-twisted-bin
+Description: Event-based framework for internet applications
+ It includes a web server, a telnet server, a multiplayer RPG engine, a
+ generic client and server for remote object access, and APIs for creating
+ new protocols.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Python-Version: 2.7
+
+Package: x11proto-input-dev
+Status: install ok installed
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Installed-Size: 461
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: x11proto-input
+Version: 2.1.99.6-1
+Depends: x11proto-core-dev
+Description: X11 Input extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Input extension, used to control all manner of options related
+ to input device handling.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org inputproto proto module.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libqdox-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 264
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: qdox
+Version: 1.12-1
+Suggests: libqdox-java-doc
+Description: Quickly parses declarations and Javadoc from Java source
+ qdox quickly parses Java source files looking for key items of
+ interest:
+  * class and interface definitions
+  * member declarations
+  * import statements
+  * JavaDoc comments
+ .
+ qdox ignores all other components of Java source, such as actual method
+ implementations, to avoid overhead.  qdox returns a simple document
+ model containing only the declarations and containing enough
+ information to be useful.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://qdox.codehaus.org/
+
+Package: initramfs-tools
+Status: install ok installed
+Multi-Arch: foreign
+Priority: required
+Section: utils
+Installed-Size: 362
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: all
+Version: 0.99ubuntu13
+Provides: linux-initramfs-tool
+Depends: initramfs-tools-bin (>= 0.99ubuntu13), initramfs-tools-bin (<< 0.99ubuntu13.1~), klibc-utils (>= 1.5.9-1), busybox-initramfs (>= 1:1.13.3-1ubuntu5), cpio, module-init-tools, udev (>= 147~-5), findutils (>= 4.2.24), util-linux (>> 2.15~rc1)
+Suggests: bash-completion
+Breaks: cryptsetup (<< 2:1.1.0-2.1), elilo (<< 3.12-3.1~), lilo (<< 22.8-8.2~), mountall (<< 2.0~), s390-tools (<< 1.8.3-2~)
+Conflicts: usplash (<< 0.5.50)
+Conffiles:
+ /etc/initramfs-tools/initramfs.conf 8801535d9bec98754eea6a172f956d42
+ /etc/initramfs-tools/update-initramfs.conf e2026d4603e7161efaccca519aeb1297
+ /etc/kernel/postinst.d/initramfs-tools fe7713b9a74a10ed71d1e7dd93afc209
+ /etc/kernel/postrm.d/initramfs-tools e22d1ab0d7a7a1b66ae6d71ea4f21938
+ /etc/bash_completion.d/initramfs-tools 7eeb7184772f3658e7cf446945c096b1
+Description: tools for generating an initramfs
+ This package contains tools to create and boot an initramfs for packaged 2.6
+ Linux kernel. The initramfs is a gzipped cpio archive. At boot time, the
+ kernel unpacks that archive into RAM, mounts and uses it as initial root file
+ system. The mounting of the real root file system occurs in early user space.
+ klibc provides utilities to setup root. Having the root on MD, LVM2, LUKS or
+ NFS is also supported.
+ Any boot loader with initrd support is able to load an initramfs archive.
+Original-Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+
+Package: makedev
+Status: install ok installed
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 126
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 2.3.1-89ubuntu2
+Depends: base-passwd (>= 3.0.4)
+Conflicts: udev (<= 0.024-7)
+Description: creates device files in /dev
+ The MAKEDEV executable is used to create device files, often in /dev.
+ .
+ Device files are special files through which applications can interact
+ with hardware.
+ .
+ This package is not necessary for most modern Linux systems, where the udev
+ subsystem provides a more dynamic mechanism for device file management.
+Original-Maintainer: Bdale Garbee <bdale@gag.com>
+
+Package: laptop-detect
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 56
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.13.7ubuntu2
+Depends: dmidecode (>> 2.8-2)
+Description: attempt to detect a laptop
+ laptop-detect attempts to determine whether it is being run on a laptop or a
+ desktop and appraises its caller of this.
+Original-Maintainer: Otavio Salvador <otavio@debian.org>
+
+Package: libxml2
+Status: install ok installed
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 1745
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.7.8.dfsg-5.1ubuntu4.3
+Depends: libc6 (>= 2.15), zlib1g (>= 1:1.2.3.3.dfsg)
+Pre-Depends: multiarch-support
+Recommends: xml-core
+Description: GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package provides a library providing an extensive API to handle
+ such XML data files.
+Homepage: http://xmlsoft.org/
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+
+Package: telnet
+Status: install ok installed
+Priority: standard
+Section: net
+Installed-Size: 204
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: netkit-telnet
+Version: 0.17-36build1
+Replaces: netstd
+Provides: telnet-client
+Depends: netbase, libc6 (>= 2.11), libgcc1 (>= 1:4.1.1), libncurses5 (>= 5.6+20071006-3), libstdc++6 (>= 4.1.1)
+Description: The telnet client
+ The telnet command is used for interactive communication with another host
+ using the TELNET protocol.
+Original-Maintainer: Alberto Gonzalez Iniesta <agi@inittab.org>
+
+Package: login
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: admin
+Installed-Size: 1048
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: shadow
+Version: 1:4.1.4.2+svn3283-3ubuntu5.1
+Replaces: manpages-de (<< 0.5-3), manpages-tr (<< 1.0.5), manpages-zh (<< 1.5.1-1)
+Pre-Depends: libc6 (>= 2.7), libpam0g (>= 0.99.7.1), libpam-runtime, libpam-modules
+Conflicts: amavisd-new (<< 2.3.3-8), backupninja (<< 0.9.3-5), echolot (<< 2.1.8-4), gnunet (<< 0.7.0c-2), python-4suite (<< 0.99cvs20060405-1)
+Conffiles:
+ /etc/securetty 1a028cba3ab1989a6a3e395720806069
+ /etc/login.defs be0977c1c1c84c62823c7d7d4e099067
+ /etc/pam.d/su 7309fb874571fe5447321b43448a50b3
+ /etc/pam.d/login f6fd8b05973b278e6a2b7c61bc7732cd
+Description: system login tools
+ These tools are required to be able to login and use your system. The
+ login program invokes your user shell and enables command execution. The
+ newgrp program is used to change your effective group ID (useful for
+ workgroup type situations). The su program allows changing your effective
+ user ID (useful being able to execute commands as another user).
+Homepage: http://pkg-shadow.alioth.debian.org/
+Original-Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
+
+Package: gpgv
+Status: install ok installed
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Installed-Size: 436
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gnupg
+Version: 1.4.11-3ubuntu2.2
+Depends: libbz2-1.0, libc6 (>= 2.14), libreadline6 (>= 6.0), zlib1g (>= 1:1.1.4)
+Suggests: gnupg
+Description: GNU privacy guard - signature verification tool
+ GnuPG is GNU's tool for secure communication and data storage.
+ .
+ gpgv is a stripped-down version of gnupg which is only able to check
+ signatures.  It is smaller than the full-blown gnupg and uses a
+ different (and simpler) way to check that the public keys used to
+ make the signature are trustworthy.
+Homepage: http://www.gnupg.org
+Original-Maintainer: Debian GnuPG-Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+
+Package: libssl1.0.0
+Status: install ok installed
+Multi-Arch: same
+Priority: important
+Section: libs
+Installed-Size: 2836
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: openssl
+Version: 1.0.1-4ubuntu5.5
+Depends: libc6 (>= 2.14), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0
+Pre-Depends: multiarch-support
+Breaks: openssh-client (<< 1:5.9p1-4), openssh-server (<< 1:5.9p1-4)
+Description: SSL shared libraries
+ libssl and libcrypto shared libraries needed by programs like
+ apache-ssl, telnet-ssl and openssh.
+ .
+ It is part of the OpenSSL implementation of SSL.
+Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+
+Package: libdbus-1-3
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 362
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: dbus
+Version: 1.4.18-1ubuntu1.3
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Recommends: dbus
+Breaks: kde-window-manager (<< 4:4.4.5-9), kdebase-workspace-bin (<< 4:4.4.5-9)
+Description: simple interprocess messaging system (library)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ D-Bus supports broadcast messages, asynchronous messages (thus
+ decreasing latency), authentication, and more. It is designed to be
+ low-overhead; messages are sent using a binary protocol, not using
+ XML. D-Bus also supports a method call mapping for its messages, but
+ it is not required; this makes using the system quite simple.
+ .
+ It comes with several bindings, including GLib, Python, Qt and Java.
+ .
+ The daemon can be found in the dbus package.
+Homepage: http://dbus.freedesktop.org/
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: libbackport-util-concurrent-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 400
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: backport-util-concurrent
+Version: 3.1-3
+Suggests: libbackport-util-concurrent-java-doc
+Description: backport of java.util.concurrent to Java 1.4
+ This is a backport of the java.util.concurrent API, introduced in
+ Java 5.0, to Java 1.4.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://backport-jsr166.sourceforge.net/
+
+Package: gettext-base
+Status: install ok installed
+Priority: standard
+Section: utils
+Installed-Size: 368
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gettext
+Version: 0.18.1.1-5ubuntu3
+Provides: libasprintf0c2
+Depends: libc6 (>= 2.8), libstdc++6 (>= 4.1.1)
+Description: GNU Internationalization utilities for the base system
+ This package includes the gettext and ngettext programs which allow
+ other packages to internationalize the messages given by shell scripts.
+Homepage: http://www.gnu.org/software/gettext/
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: libflac8
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 340
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: flac
+Version: 1.2.1-6
+Depends: libc6 (>= 2.7), libogg0 (>= 1.0rc3)
+Pre-Depends: multiarch-support
+Description: Free Lossless Audio Codec - runtime C library
+ FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is
+ similar to MP3, but lossless.  The FLAC project consists of:
+ .
+  * The stream format
+  * libFLAC, which implements a reference encoder, stream decoder, and file
+    decoder
+  * flac, which is a command-line wrapper around libFLAC to encode and decode
+    .flac files
+  * Input plugins for various music players (Winamp, XMMS, and more in the
+    works)
+ .
+ This package contains the runtime library libFLAC.
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Homepage: http://flac.sourceforge.net/
+
+Package: module-init-tools
+Status: install ok installed
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Installed-Size: 332
+Maintainer: Scott James Remnant <scott@ubuntu.com>
+Architecture: amd64
+Version: 3.16-1ubuntu2
+Depends: libc6 (>= 2.8), upstart-job
+Pre-Depends: dpkg (>= 1.15.7.2)
+Breaks: initramfs-tools (<< 0.92bubuntu23)
+Conffiles:
+ /etc/modprobe.d/blacklist-ath_pci.conf d1da9bb08c2b0f56f3be93fd0e37946b
+ /etc/modprobe.d/blacklist-firewire.conf 9cc07a17e8e64f9cd35ff59c29debe69
+ /etc/modprobe.d/blacklist-framebuffer.conf 96f2f501cc646b598263693c8976ddd1
+ /etc/modprobe.d/blacklist-rare-network.conf 8fb4b96124e461f53adceba9ca91f09a
+ /etc/modprobe.d/blacklist-watchdog.conf 55327f9270c8a6257a833c4d127a39e1
+ /etc/modprobe.d/blacklist.conf bc6754fa320733c6d239a4bb0148ffd7
+ /etc/depmod.d/ubuntu.conf 7c8439ef36b12e5f226b5dbfa20b8c2d
+ /etc/init/module-init-tools.conf 48db1b767c3148fd83eba59d12fc9a5e
+Description: tools for managing Linux kernel modules
+ This package contains a set of programs for loading, inserting, and
+ removing kernel modules for Linux.
+Homepage: http://www.kerneltools.org/
+Original-Maintainer: Marco d'Itri <md@linux.it>
+
+Package: libffi6
+Status: install ok installed
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 88
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libffi
+Version: 3.0.11~rc1-5
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: Foreign Function Interface library runtime
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+
+Package: man-db
+Status: install ok installed
+Multi-Arch: foreign
+Priority: important
+Section: doc
+Installed-Size: 1736
+Maintainer: Colin Watson <cjwatson@debian.org>
+Architecture: amd64
+Version: 2.6.1-2ubuntu1
+Replaces: man, manpages-de (<< 0.5-4), nlsutils
+Provides: man, man-browser
+Depends: groff-base (>= 1.18.1.1-15), bsdmainutils, debconf (>= 1.2.0) | debconf-2.0, dpkg (>= 1.9.0), libc6 (>= 2.14), libgdbm3 (>= 1.8.3), libpipeline1 (>= 1.1.0), zlib1g (>= 1:1.1.4)
+Suggests: groff, less, www-browser
+Conflicts: man, suidmanager (<< 0.50)
+Conffiles:
+ /etc/manpath.config 167675fd93075fb5f6ce1aa5f56a8a22
+ /etc/cron.weekly/man-db 643340ce3fb3994ef2ae7b88a2cf3230
+ /etc/cron.daily/man-db 18745b8d583be7a4b7a00e9ffc98ac99
+Description: on-line manual pager
+ This package provides the man command, the primary way of examining the
+ on-line help files (manual pages). Other utilities provided include the
+ whatis and apropos commands for searching the manual page database, the
+ manpath utility for determining the manual page search path, and the
+ maintenance utilities mandb, catman and zsoelim. man-db uses the groff
+ suite of programs to format and display the manual pages.
+Homepage: http://man-db.nongnu.org/
+
+Package: libplexus-archiver-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 252
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: plexus-archiver
+Version: 1.0~alpha12-3
+Depends: libplexus-utils-java, libplexus-io-java, libplexus-containers-java
+Description: The archiver plugin for the Plexus compiler system
+ The Plexus project provides a full software stack for creating and
+ executing software projects. Based on the Plexus container, the applications
+ can utilise component-oriented programming to build modular, reusable
+ components that can easily be assembled and reused.
+ .
+ This package provides the Archiver plugin for Plexus, used to create
+ JARs and other archives.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://plexus.codehaus.org/plexus-components/plexus-archiver/
+
+Package: libcairo2
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 1375
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: cairo
+Version: 1.10.2-6.1ubuntu3
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.3.5), libpixman-1-0 (>= 0.18.0), libpng12-0 (>= 1.2.13-4), libx11-6, libxcb-render0, libxcb-shm0, libxcb1 (>= 1.2), libxrender1, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Breaks: iceape-browser (<= 2.0.3-3), libgtk-directfb-2.0-0, xulrunner-1.9, xulrunner-1.9.1 (<= 1.9.1.8-3)
+Description: The Cairo 2D vector graphics library
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends. Paths consist
+ of line segments and cubic splines and can be rendered at any width
+ with various join and cap styles. All colors may be specified with
+ optional translucence (opacity/alpha) and combined using the
+ extended Porter/Duff compositing algebra as found in the X Render
+ Extension.
+ .
+ Cairo exports a stateful rendering API similar in spirit to the path
+ construction, text, and painting operators of PostScript, (with the
+ significant addition of translucence in the imaging model). When
+ complete, the API is intended to support the complete imaging model of
+ PDF 1.4.
+ .
+ This package contains the shared libraries.
+Homepage: http://cairographics.org/
+Original-Maintainer: Dave Beckett <dajobe@debian.org>
+
+Package: libhtml-format-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 160
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 2.10-1
+Depends: perl, libfont-afm-perl, libhtml-tree-perl
+Description: module for transforming HTML into various formats
+ HTML::Formatter is a base class for various formatters, which are modules
+ that traverse an HTML syntax tree and produce various output file formats.
+ There are currently three formatter classes included:
+ .
+  * HTML::FormatText for converting to plain human-readable text
+  * HTML::FormatPS for converting to PostScript
+  * HTML::FormatRTF for converting to Microsoft's Rich Text Format (RTF)
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/HTML-Format/
+
+Package: libgdbm3
+Status: install ok installed
+Multi-Arch: same
+Priority: important
+Section: libs
+Installed-Size: 132
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: gdbm
+Version: 1.8.3-10
+Depends: libc6 (>= 2.2.5), dpkg (>= 1.15.4) | install-info
+Pre-Depends: multiarch-support
+Description: GNU dbm database routines (runtime version)
+ GNU dbm ('gdbm') is a library of database functions that use extendible
+ hashing and works similarly to the standard UNIX 'dbm' functions.
+ .
+ The basic use of 'gdbm' is to store key/data pairs in a data file, thus
+ providing a persistent version of the 'dictionary' Abstract Data Type
+ ('hash' to perl programmers).
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Homepage: http://directory.fsf.org/project/gdbm/
+
+Package: libdoxia-sitetools-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 270
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: doxia-sitetools
+Version: 1.1.4-1ubuntu1
+Depends: libcommons-collections3-java, libdoxia-java, libitext1-java, libjaxp1.3-java, libplexus-container-default-java, libplexus-i18n-java, libplexus-utils-java, libplexus-velocity-java, libxalan2-java, velocity
+Suggests: libdoxia-sitetools-java-doc
+Conflicts: libdoxia-java (<= 1.0-alpha-7-1)
+Description: Extension package of the content generation framework Doxia
+ Doxia Sitetools generates sites, consisting of static and dynamic content that
+ was generated by Doxia. Doxia is a content generation framework which aims to
+ provide its users with powerful techniques for generating static and dynamic
+ content.
+ .
+ Doxia can be used to generate static sites in addition to being
+ incorporated into dynamic content generation systems like blogs, wikis
+ and content management systems.
+ .
+ Doxia is used exensively by Maven and it powers the entire
+ documentation system of Maven. It gives Maven the ability to take any
+ document that Doxia supports and output it any format.
+Homepage: http://maven.apache.org/doxia/doxia-sitetools/
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+
+Package: libtie-ixhash-perl
+Status: install ok installed
+Priority: optional
+Section: interpreters
+Installed-Size: 84
+Maintainer: Ivan Kohler <ivan-debian@420.am>
+Architecture: all
+Version: 1.21-2
+Depends: perl (>= 5.6.0-16)
+Description: ordered associative arrays for Perl
+ This Perl module implements Perl hashes that preserve the order in which the
+ hash elements were added.  The order is not affected when values
+ corresponding to existing keys in the IxHash are changed.  The elements can
+ also be set to any arbitrary supplied order.  The familiar perl array
+ operations can also be performed on the IxHash.
+
+Package: libgcrypt11
+Status: install ok installed
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 586
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.5.0-3ubuntu0.1
+Depends: libc6 (>= 2.15), libgpg-error0 (>= 1.10)
+Pre-Depends: multiarch-support
+Suggests: rng-tools
+Breaks: gnupg2 (<< 2.0.17-2ubuntu2), gpgsm (<< 2.0.17-2ubuntu2), libgnutls26 (<< 2.12.7-3)
+Description: LGPL Crypto library - runtime library
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Camellia, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512, Tiger,
+ Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
+Homepage: http://directory.fsf.org/project/libgcrypt/
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+
+Package: libjs-jquery
+Status: install ok installed
+Priority: optional
+Section: web
+Installed-Size: 381
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: jquery
+Version: 1.7.1-1ubuntu1
+Replaces: jquery
+Suggests: javascript-common
+Conflicts: jquery
+Description: JavaScript library for dynamic web applications
+ jQuery is a fast, concise, JavaScript Library that simplifies how you
+ traverse HTML documents, handle events, perform animations, and add Ajax
+ interactions to your web pages. jQuery is designed to change the way
+ that you write JavaScript.
+Homepage: http://jquery.com/
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+
+Package: libplexus-ant-factory-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 84
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: plexus-ant-factory
+Version: 1.0~alpha2.1-3
+Depends: libplexus-container-default-java
+Recommends: ant
+Description: Plexus Ant Factory
+ The Plexus project provides a full software stack for creating and
+ executing software projects. Based on the Plexus container, the applications
+ can utilise component-oriented programming to build modular, reusable
+ components that can easily be assembled and reused.
+ .
+ This package provides a factory for instantiating Ant with Plexus.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://plexus.codehaus.org/
+
+Package: python-dbus
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 413
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: dbus-python
+Version: 1.0.0-1ubuntu1
+Replaces: python2.4-dbus
+Provides: python2.7-dbus
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), libc6 (>= 2.4), libdbus-1-3 (>= 1.2.16), libdbus-glib-1-2 (>= 0.78), libglib2.0-0 (>= 2.12.0), python-dbus-dev
+Recommends: python-gi | python-gobject-2 | python-qt4-dbus
+Suggests: python-dbus-doc, python-dbus-dbg
+Breaks: gajim (<< 0.11.1), gnome-osd (<< 0.12.0), python-qt4-dbus (<< 4.8.3-3)
+Conflicts: python2.4-dbus
+Description: simple interprocess messaging system (Python interface)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ This package provides a Python interface to D-Bus.
+ .
+ See the dbus description for more information about D-Bus in general.
+Homepage: http://www.freedesktop.org/wiki/Software/DBusBindings#Python
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: libnet-http-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 85
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 6.02-1
+Replaces: libwww-perl (<< 6.00)
+Depends: perl
+Recommends: libio-socket-ssl-perl (>= 1.38)
+Breaks: libwww-perl (<< 6.00)
+Description: module providing low-level HTTP connection client
+ The Net::HTTP class is a low-level HTTP client.  An instance of the
+ Net::HTTP class represents a connection to an HTTP server.  The
+ HTTP protocol is described in RFC 2616.  The Net::HTTP class
+ supports HTTP/1.0 and HTTP/1.1. Net::HTTP is a sub-class of IO::Socket::INET.
+ You can mix its methods with reading and writing from the socket directly.
+ This is not necessarily a good idea, unless you know what you are doing.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/Net-HTTP/
+
+Package: libbind9-80
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 100
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: bind9
+Version: 1:9.8.1.dfsg.P1-4ubuntu0.5
+Replaces: libbind0
+Depends: libc6 (>= 2.14), libdns81, libisc83, libisccfg82
+Conflicts: libbind0, libbind9-41
+Description: BIND9 Shared Library used by BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ This package delivers the libbind9 shared library used by BIND's daemons and
+ clients.
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+
+Package: isc-dhcp-common
+Status: install ok installed
+Priority: important
+Section: net
+Installed-Size: 672
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: isc-dhcp
+Version: 4.1.ESV-R4-0ubuntu5.5
+Replaces: dhcp3-common
+Provides: dhcp3-common
+Depends: debianutils (>= 2.8.2), libc6 (>= 2.15)
+Description: common files used by all the isc-dhcp* packages
+ This package contains the files used by all the packages from ISC
+ DHCP.
+Original-Maintainer: Debian ISC DHCP maintainers <pkg-dhcp-devel@lists.alioth.debian.org>
+
+Package: libxinerama1
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 56
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: libxinerama
+Version: 2:1.1.1-3build1
+Depends: libc6 (>= 2.2.5), libx11-6 (>= 2:1.4.99.1), libxext6
+Pre-Depends: multiarch-support
+Description: X11 Xinerama extension library
+ libXinerama provides an X Window System client interface to the XINERAMA
+ extension to the X protocol.
+ .
+ The Xinerama (also known as panoramiX) extension allows for multiple screens
+ attached to a single display to be treated as belonging together, and to give
+ desktop applications a better idea of the monitor layout.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXinerama
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: fop
+Status: install ok installed
+Priority: optional
+Section: text
+Installed-Size: 90
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1:1.0.dfsg2-6
+Depends: default-jre-headless | java2-runtime-headless, libfop-java
+Recommends: libsaxon-java
+Suggests: fop-doc, libservlet2.5-java
+Description: XML formatter driven by XSL Formatting Objects (XSL-FO.)
+ FOP is a Java application that reads a formatting object tree and then
+ turns it into a wide variety of output presentations (including AFP,
+ PCL, PDF, PNG, PostScript, RTF, TIFF, and plain text), or displays
+ the result on-screen.
+ .
+ The formatting object tree can be in the form of an XML document
+ (output by an XSLT engine like xalan) or can be passed in memory as a
+ DOM Document or (in the case of xalan) SAX events.
+ .
+ This package contains the fop command line tool
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://xmlgraphics.apache.org/fop/
+
+Package: libuuid1
+Status: install ok installed
+Multi-Arch: same
+Priority: required
+Section: libs
+Installed-Size: 110
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: util-linux
+Version: 2.20.1-1ubuntu3
+Replaces: e2fsprogs (<< 1.34-1)
+Depends: passwd, libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Recommends: uuid-runtime
+Description: Universally Unique ID library
+ The libuuid library generates and parses 128-bit universally unique
+ ids (UUIDs).  A UUID is an identifier that is unique across both
+ space and time, with respect to the space of all UUIDs.  A UUID can
+ be used for multiple purposes, from tagging objects with an extremely
+ short lifetime, to reliably identifying very persistent objects
+ across a network.
+ .
+ See RFC 4122 for more information.
+Homepage: http://userweb.kernel.org/~kzak/util-linux/
+Original-Maintainer: LaMont Jones <lamont@debian.org>
+
+Package: libtasn1-3
+Status: install ok installed
+Multi-Arch: same
+Priority: standard
+Section: libs
+Installed-Size: 142
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.10-1ubuntu1.1
+Depends: libc6 (>= 2.14)
+Pre-Depends: multiarch-support
+Description: Manage ASN.1 structures (runtime)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains runtime libraries.
+Homepage: http://www.gnu.org/software/libtasn1/
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+
+Package: lsb-base
+Status: install ok installed
+Multi-Arch: foreign
+Priority: required
+Section: misc
+Installed-Size: 75
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: lsb
+Version: 4.0-0ubuntu20.2
+Replaces: lsb (<< 2.0-6), lsb-core (<< 2.0-6)
+Depends: sed, ncurses-bin
+Conflicts: lsb (<< 2.0-6), lsb-core (<< 2.0-6)
+Conffiles:
+ /etc/lsb-base-logging.sh 0aa55cad853be603ce31790c696e394b
+Description: Linux Standard Base 4.0 init script functionality
+ The Linux Standard Base (http://www.linuxbase.org/) is a standard
+ core system that third-party applications written for Linux can
+ depend upon.
+ .
+ This package only includes the init-functions shell library, which
+ may be used by other packages' initialization scripts for console
+ logging and other purposes.
+Homepage: http://www.linux-foundation.org/en/LSB
+Original-Maintainer: Chris Lawrence <lawrencc@debian.org>
+
+Package: libcurl3-gnutls
+Status: install ok installed
+Multi-Arch: same
+Priority: optional
+Section: libs
+Installed-Size: 525
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: curl
+Version: 7.22.0-3ubuntu4
+Replaces: libcurl4-gnutls
+Depends: libc6 (>= 2.15), libgcrypt11 (>= 1.4.5), libgnutls26 (>= 2.12.6.1-0), libgssapi-krb5-2 (>= 1.10+dfsg~), libidn11 (>= 1.13), libldap-2.4-2 (>= 2.4.7), librtmp0 (>= 2.3), zlib1g (>= 1:1.1.4), ca-certificates
+Pre-Depends: multiarch-support
+Conflicts: libcurl4-gnutls
+Description: Multi-protocol file transfer library (GnuTLS)
+ libcurl is designed to be a solid, usable, reliable and portable
+ multi-protocol file transfer library.
+ .
+ SSL support is provided by GnuTLS.
+ .
+ This is the shared version of libcurl.
+Homepage: http://curl.haxx.se
+Original-Maintainer: Ramakrishnan Muthukrishnan <rkrishnan@debian.org>
+
+Package: fontconfig
+Status: install ok installed
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Installed-Size: 446
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.8.0-3ubuntu9.1
+Replaces: fontconfig-config (<< 2.5.93-1)
+Depends: libc6 (>= 2.3.4), libfontconfig1 (>= 2.8.0), fontconfig-config
+Description: generic font configuration library - support binaries
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ Fontconfig is not a rasterization library, nor does it impose a
+ particular rasterization library on the application. The X-specific
+ library 'Xft' uses fontconfig along with freetype to specify and
+ rasterize fonts.
+ .
+ This package contains a program to maintain the fontconfig cache
+ (fc-cache), a sample program to list installed fonts (fc-list), a program
+ to test the matching rules (fc-match) and a program to dump the binary
+ cache files in string form (fc-cat). It no longer makes fonts managed by
+ defoma available to fontconfig applications.
+Original-Maintainer: Keith Packard <keithp@debian.org>
+
+Package: libjline-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 126
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: jline
+Version: 1.0-1
+Suggests: libjline-java-doc
+Description: Java library for handling console input
+ JLine is a 100% pure Java library for reading and editing console input.
+ It is similar in functionality to BSD editline and GNU readline.  People
+ familiar with the readline/editline capabilities for modern shells will
+ find most of the command editing features of JLine to be familiar.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: http://jline.sourceforge.net/
+
+Package: libparse-debcontrol-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 2.005-3
+Depends: perl, libio-stringy-perl, libwww-perl, liberror-perl, libexporter-lite-perl
+Recommends: libtie-ixhash-perl
+Description: parser for debian control-like files
+ Parse::DebControl is an easy OO way to parse Debian control files and
+ other colon separated key-value pairs. It's specifically designed
+ to handle the format used in Debian control files, template files, and
+ the cache files used by dpkg.
+ .
+ For basic format information see:
+ http://www.debian.org/doc/debian-policy/ch-controlfields.html#s-controlsyntax
+ .
+ This module does not actually do any intelligence with the file content
+ (because there are a lot of files in this format), but merely handles
+ the format. It can handle simple control files, or files hundreds of lines
+ long efficiently and easily.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/Parse-DebControl/
+
+Package: linux-image-3.2.0-35-generic
+Status: install ok installed
+Priority: optional
+Section: kernel
+Installed-Size: 145927
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux
+Version: 3.2.0-35.55
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, linux-image-3.0, redhat-cluster-modules
+Depends: initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3), crda (>= 1.1.1-1ubuntu2) | wireless-crda
+Pre-Depends: dpkg (>= 1.10.24)
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo (>= 19.1)
+Suggests: fdutils, linux-doc-3.2.0 | linux-source-3.2.0, linux-tools
+Conflicts: hotplug (<< 0.0.20040105-1)
+Description: Linux kernel image for version 3.2.0 on 64 bit x86 SMP
+ This package contains the Linux kernel image for version 3.2.0 on
+ 64 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
