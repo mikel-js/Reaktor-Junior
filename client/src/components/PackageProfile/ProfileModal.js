@@ -68,6 +68,7 @@ const ProfileModal = ({ packageName, description, dependencies }) => {
           {dependencies ? (
             dependencies.map((dependency) => (
               <p
+                style={{ cursor: 'pointer', width: `fit-content` }}
                 key={dependency}
                 id={dependency}
                 onClick={(e) => {
@@ -80,7 +81,7 @@ const ProfileModal = ({ packageName, description, dependencies }) => {
           ) : (
             <p>No dependency</p>
           )}
-          <Link to={`/`}>Back to Homepage</Link>
+          <Link to={`/home`}>Back to Homepage</Link>
         </div>
       </div>
     </>

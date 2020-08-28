@@ -8,7 +8,7 @@ const path = require('path');
 const filePath =
   platform === 'linux' ? '/var/lib/dpkg/status' : './status.real';
 
-app.use(cors());
+// app.use(cors());
 
 const removeDuplicates = (array) => {
   return array.reduce(
@@ -17,7 +17,7 @@ const removeDuplicates = (array) => {
   );
 };
 
-app.get('/', (req, res) => {
+app.get('/packages', (req, res) => {
   fs.readFile(filePath, 'utf8', function (err, data) {
     if (err) throw err;
     let splitted = data.toString().split('\n');
