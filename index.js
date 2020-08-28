@@ -5,6 +5,9 @@ const fs = require('fs');
 const platform = process.platform;
 const path = require('path');
 
+const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.static(buildPath));
+
 const filePath =
   platform === 'linux' ? '/var/lib/dpkg/status' : './status.real';
 
