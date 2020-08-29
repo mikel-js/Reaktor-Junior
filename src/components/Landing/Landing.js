@@ -83,7 +83,7 @@ const Landing = () => {
         <Canvas>
           <h1>REAKTOR</h1>
           <p>
-            This is my pre-assingment for Reaktor - Junior Developer Position
+            This is my pre-assignment for Reaktor - Junior Developer Position
           </p>
           <p>
             <Link to='/home'>

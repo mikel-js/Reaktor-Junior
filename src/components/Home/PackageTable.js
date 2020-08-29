@@ -26,10 +26,13 @@ const PackageTable = () => {
 
   const tableStyle = {
     margin: `0 auto`,
+    marginTop: `5vh`,
     width: `30%`,
     padding: 0,
     height: `100%`,
     color: 'black',
+    fontWeight: 600,
+    border: `solid white 1px`,
   };
 
   return (
@@ -43,7 +46,7 @@ const PackageTable = () => {
       <tbody>
         {packages.map((bundle, index) => (
           <tr key={index}>
-            <td>{index + 1}</td>
+            <td>{index + 1}.</td>
             <td>
               {' '}
               <Link

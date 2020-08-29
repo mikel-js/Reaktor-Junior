@@ -9,12 +9,10 @@ const HomeWrapper = styled.div`
 
 const HomePage = ({ packages }) => {
   return (
-    <>
-      <HomeWrapper>
-        <StyledHeader headerText='Home Page' />
-        <PackageTable />
-      </HomeWrapper>
-    </>
+    <HomeWrapper>
+      <StyledHeader headerText='Home Page' />
+      <PackageTable />
+    </HomeWrapper>
   );
 };
 

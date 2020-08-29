@@ -6,6 +6,7 @@ const Text = styled.h1`
   text-align: center;
   margin: 0;
   padding: 0;
+  padding-top: 5vh;
 `;
 
 const StyledHeader = ({ headerText }) => <Text>{headerText}</Text>;
