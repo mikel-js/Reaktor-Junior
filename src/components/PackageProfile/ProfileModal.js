@@ -7,6 +7,9 @@ import styled from 'styled-components';
 const ProfileWrapper = styled.div`
   width: 50vw;
   margin: 0 auto;
+  @media (max-width: 800px) {
+    width: 70vw;
+  }
 `;
 
 const ProfileModal = ({ packageName, description, dependencies }) => {
@@ -78,6 +81,7 @@ const ProfileModal = ({ packageName, description, dependencies }) => {
                 cursor: 'pointer',
                 width: `fit-content`,
                 color: `#f7f0f0`,
+                margin: `.3em 0`,
               }}
               key={dependency}
               id={dependency}

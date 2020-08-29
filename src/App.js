@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Landing from './components/Landing/Landing';
 import HomePage from './components/Home/HomePage';
 import PackageProfilePage from './components/PackageProfile/PackageProfilePage';
+import './App.css';
 
 function App() {
   return (

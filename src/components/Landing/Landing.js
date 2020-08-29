@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Container, Col, Row } from 'react-bootstrap';
 
 import compImg from '../../images/comp.jpg';
 
@@ -15,23 +14,33 @@ const LandingWrapper = styled.div`
 `;
 
 const CanvasWrapper = styled.div`
+  color: white;
   margin: 20vh auto;
   margin-bottom: 0;
-  width: 60vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 650px) { 
+    height: 20vh;
+    width: 80vw;
+    flex-direction: column;
 `;
 
 const Canvas = styled.div`
   margin: 0;
   padding: 0;
-  height: 40vh;
-  display: flex;
-  @media (max-width: 1000px) {
-    height: 25vh;
-    flex-direction: row;
-  }
+  height: 30vh;
+  width: 30vw;
   @media (max-width: 650px) {
     height: 20vh;
-    flex-direction: row;
+    width: 70vw;
+  }
+  @media (max-width: 450px) {
+    height: 19vh;
+    margin-top: 3em;
+    width: 80vw;
   }
 `;
 
@@ -62,36 +71,29 @@ const Copyright = styled.div`
   color: white;
   width: 100%;
   text-align: center;
+  @media (max-width: 300px) {
+    margin-top: 45vh;
+  }
 `;
-
-const coverStyle = {
-  margin: 0,
-  padding: 0,
-  height: `90%`,
-  color: `white`,
-};
 
 const Landing = () => {
   return (
     <LandingWrapper>
       <CanvasWrapper>
         <Canvas>
-          <Container fluid style={coverStyle}>
-            <Row style={coverStyle}>
-              <Col style={coverStyle}>
-                <h1>REAKTOR</h1>
-                <p>This is my pre-assingment for Reaktor Junior</p>
-                <p>
-                  <Link to='/home'>
-                    <LearnMore>Learn more</LearnMore>
-                  </Link>
-                </p>
-              </Col>
-              <Col style={{ margin: 0, padding: 0 }}>
-                <CanvasImage />
-              </Col>
-            </Row>
-          </Container>
+          <h1>REAKTOR</h1>
+          <p>
+            This is my pre-assingment for Reaktor - Junior Developer Position
+          </p>
+          <p>
+            <Link to='/home'>
+              <LearnMore>Learn more</LearnMore>
+            </Link>
+          </p>
+        </Canvas>
+        <Canvas>
+          {' '}
+          <CanvasImage />
         </Canvas>
       </CanvasWrapper>
       <Copyright>
