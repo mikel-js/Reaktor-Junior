@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const fs = require('fs');
 const platform = process.platform;
 const path = require('path');
@@ -9,6 +10,8 @@ app.use(express.static(buildPath));
 
 const filePath =
   platform === 'linux' ? '/var/lib/dpkg/status' : './status.real';
+
+app.use(cors());
 
 const removeDuplicates = (array) => {
   return array.reduce(

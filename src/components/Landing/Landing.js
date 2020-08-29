@@ -1,28 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import './Landing.css';
-import { Button, Container, Col, Row } from 'react-bootstrap';
+import { Container, Col, Row } from 'react-bootstrap';
 
-import ComputerBg from '../images/comp.jpg';
-import StarBg from '../images/comp.jpg';
-
-// background: #be93c5; /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #be93c5, #7bc6cc); /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #be93c5, #7bc6cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+import compImg from '../../images/comp.jpg';
 
 const LandingWrapper = styled.div`
-  background-image: url(${ComputerBg});
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
   height: 100vh;
   width: 100vw;
   float: left;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0;
 `;
 
 const CanvasWrapper = styled.div`
-  margin: 40vh auto;
+  margin: 20vh auto;
   margin-bottom: 0;
   width: 60vw;
 `;
@@ -31,10 +24,19 @@ const Canvas = styled.div`
   margin: 0;
   padding: 0;
   height: 40vh;
+  display: flex;
+  @media (max-width: 1000px) {
+    height: 25vh;
+    flex-direction: row;
+  }
+  @media (max-width: 650px) {
+    height: 20vh;
+    flex-direction: row;
+  }
 `;
 
 const CanvasImage = styled.div`
-  background-image: url(${StarBg});
+  background-image: url(${compImg});
   height: 100%;
   width: 100%;
   background-position: center;
@@ -43,40 +45,58 @@ const CanvasImage = styled.div`
   margin: 0;
 `;
 
+const LearnMore = styled.button`
+  border: solid white 1px;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  &:hover {
+    color: black;
+    background: white;
+  }
+`;
+
+const Copyright = styled.div`
+  margin: 0 auto;
+  margin-top: 35vh;
+  color: white;
+  width: 100%;
+  text-align: center;
+`;
+
 const coverStyle = {
   margin: 0,
   padding: 0,
-  height: `100%`,
+  height: `90%`,
+  color: `white`,
 };
+
 const Landing = () => {
   return (
     <LandingWrapper>
-      <div>
-        <div>hi</div>
-        <CanvasWrapper>
-          <Canvas>
-            <Container style={coverStyle}>
-              <Row style={coverStyle}>
-                <Col xs={8} style={(coverStyle, { border: `1px solid black` })}>
-                  <h1>Welcome to Rising Tahdet!</h1>
-                  <p>
-                    This is a simple website for all developers who are looking
-                    to find their first dream job.
-                  </p>
-                  <p>
-                    <Link to='/home'>
-                      <Button variant='primary'>Learn more</Button>
-                    </Link>
-                  </p>
-                </Col>
-                <Col style={{ margin: 0, padding: 0 }}>
-                  <CanvasImage />
-                </Col>
-              </Row>
-            </Container>
-          </Canvas>
-        </CanvasWrapper>
-      </div>
+      <CanvasWrapper>
+        <Canvas>
+          <Container fluid style={coverStyle}>
+            <Row style={coverStyle}>
+              <Col style={coverStyle}>
+                <h1>REAKTOR</h1>
+                <p>This is my pre-assingment for Reaktor Junior</p>
+                <p>
+                  <Link to='/home'>
+                    <LearnMore>Learn more</LearnMore>
+                  </Link>
+                </p>
+              </Col>
+              <Col style={{ margin: 0, padding: 0 }}>
+                <CanvasImage />
+              </Col>
+            </Row>
+          </Container>
+        </Canvas>
+      </CanvasWrapper>
+      <Copyright>
+        <p>Copyright: Michael Castro 2020</p>
+      </Copyright>
     </LandingWrapper>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
-import StyledHeader from '../elements/StyledHeader';
-import PackageTable from '../components/Home/PackageTable';
+import StyledHeader from '../../elements/StyledHeader';
+import PackageTable from './PackageTable';
 import styled from 'styled-components';
 
 const HomeWrapper = styled.div`
