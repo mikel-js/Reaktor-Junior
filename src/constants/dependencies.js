@@ -2,31 +2,14 @@ import Packages from './packages';
 
 const Dependencies = async () => {
   let arr = await Packages();
-  let obj = {};
-  let arrs = [];
-
-  arr.forEach((el) => {
-    if (!el.Depends) return;
-    if (typeof el.Depends === 'string') return;
-    el.Depends.forEach((els) => {
-      if (arrs.includes(els)) return;
-      arrs.push(els);
+  return arr.reduce((accumulator, { Package, Depends }) => {
+    if (!Depends || typeof Depends === 'string') return accumulator;
+    Depends.forEach((depend) => {
+      if (!accumulator[depend]) accumulator[depend] = [];
+      accumulator[depend].push(Package);
     });
-  });
-  arrs.forEach((dep) => {
-    let depArrs = [];
-    arr.forEach((el) => {
-      if (!el.Depends) return;
-      if (typeof el.Depends === 'string') return;
-      el.Depends.find((deps) => {
-        if (deps === dep) {
-          depArrs.push(el.Package);
-          obj[deps] = depArrs;
-        }
-      });
-    });
-  });
-  return obj;
+    return accumulator;
+  }, {});
 };
 
 export default Dependencies;

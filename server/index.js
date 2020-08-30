@@ -15,7 +15,7 @@ app.use(cors());
 
 const removeDuplicates = (array) => {
   return array.reduce(
-    (accu, item) => (accu.includes(item) ? accu : [...accu, item]),
+    (accu, item) => (accu.includes(item) ? accu : [accu, item]),
     []
   );
 };
