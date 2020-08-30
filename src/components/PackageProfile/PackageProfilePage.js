@@ -18,7 +18,8 @@ const PackageWrapper = styled.div`
       )
       #989898;
   background-blend-mode: multiply, multiply;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   font-weight: bold;
   @media (max-width: 800px) {
     font-size: 0.8em;
